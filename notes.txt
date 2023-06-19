@@ -1,0 +1,1 @@
+For Each loop iterates over every item in the array
