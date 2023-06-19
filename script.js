@@ -48,4 +48,33 @@ const movies = ages.filter(function(age){
 
 })
 
-console.log(movies)
+// Filter retail companies
+
+const retailCompanies = companies.filter(function(company){
+
+    if(company.category == 'Retail'){
+
+        return true
+
+    }
+
+})
+
+
+// console.log(retailCompanies)
+
+
+const launchYear = companies.filter(year => year.end < 2000)
+
+// console.log(launchYear)
+
+
+const eightiesCompanies = companies.filter(company => company.start <= 1990)
+
+// console.log(eightiesCompanies)
+
+
+
+const lastedTenYears = companies.filter(company => (company.end - company.start >= 10))
+
+console.log(lastedTenYears)
