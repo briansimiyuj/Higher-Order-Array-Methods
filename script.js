@@ -36,4 +36,16 @@ for(let i = 0; i < ages.length; i++){
 
 }
 
-console.log(canDrink)
+
+
+const movies = ages.filter(function(age){
+
+    if(age >= 18){
+
+        return true
+
+    }
+
+})
+
+console.log(movies)

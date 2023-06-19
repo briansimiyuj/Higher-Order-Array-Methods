@@ -1,1 +1,1 @@
-For Each loop iterates over every item in the array
+Filter method separates item(s) from an array
