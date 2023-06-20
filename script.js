@@ -23,29 +23,22 @@ const companies= [
   
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
 
+let ageSum = 0
+
+for (let i = 0; i < ages.length; i++) {
+    
+    ageSum += ages[i]
+    
+}
+
+// console.log(ageSum)
+
+const ageSums = ages.reduce((total, age) => total + age, 0)
+
+// console.log(ageSums)
 
 
-const sortedCompanies = companies.sort((comp1, comp2) =>{
 
-    if(comp1.start > comp2.start){
+const totalAge = companies.reduce((total, company) => total + (company.end - company.start), 0)
 
-        return 1
-
-    }else{
-
-        return -1
-
-    }
-
-})
-
-// console.log(sortedCompanies)
-
-
-const sortedAges = ages.sort()
-
-const sortAges = ages.sort((a,b) => a - b)
-
-console.log(sortedAges)
-
-console.log(sortAges)
+console.log(totalAge)
