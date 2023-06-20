@@ -39,4 +39,13 @@ const sortedCompanies = companies.sort((comp1, comp2) =>{
 
 })
 
-console.log(sortedCompanies)
+// console.log(sortedCompanies)
+
+
+const sortedAges = ages.sort()
+
+const sortAges = ages.sort((a,b) => a - b)
+
+console.log(sortedAges)
+
+console.log(sortAges)

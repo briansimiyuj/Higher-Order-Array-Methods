@@ -1,1 +1,1 @@
-Filter method separates item(s) from an array
+Sort method arranges items in the array
