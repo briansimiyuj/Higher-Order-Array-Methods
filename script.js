@@ -25,35 +25,18 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
 
 
 
-const companyNames = companies.map(company => company.name)
+const sortedCompanies = companies.sort((comp1, comp2) =>{
 
-// console.log(companyNames)
-const testMap = companies.map(company =>{
+    if(comp1.start > comp2.start){
 
-    return `${company.name} [${company.start}] - [${company.end}]`
+        return 1
+
+    }else{
+
+        return -1
+
+    }
 
 })
 
-// console.log(testMap)
-
-
-const agesSquare = ages.map(age => Math.sqrt(age))
-
-// console.log(agesSquare)
-
-
-
-const ageDouble = ages.map(age => age * 2)
-
-// console.log(ageDouble)
-
-
-
-const ageMap = ages
-
-    .map(age => Math.sqrt(age))
-
-    .map(age => age * 2)
-
-
-console.log(ageMap)
+console.log(sortedCompanies)
