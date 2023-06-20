@@ -23,22 +23,12 @@ const companies= [
   
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
 
-let ageSum = 0
+const combined = ages.map(age => age * 2)
 
-for (let i = 0; i < ages.length; i++) {
-    
-    ageSum += ages[i]
-    
-}
+    .filter(age => age >= 40)
 
-// console.log(ageSum)
+    .sort((a, b) => a - b)
 
-const ageSums = ages.reduce((total, age) => total + age, 0)
+    .reduce((acc, age) => acc + age, 0)
 
-// console.log(ageSums)
-
-
-
-const totalAge = companies.reduce((total, company) => total + (company.end - company.start), 0)
-
-console.log(totalAge)
+console.log(combined)
