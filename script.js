@@ -27,4 +27,33 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
 
 const companyNames = companies.map(company => company.name)
 
-console.log(companyNames)
+// console.log(companyNames)
+const testMap = companies.map(company =>{
+
+    return `${company.name} [${company.start}] - [${company.end}]`
+
+})
+
+// console.log(testMap)
+
+
+const agesSquare = ages.map(age => Math.sqrt(age))
+
+// console.log(agesSquare)
+
+
+
+const ageDouble = ages.map(age => age * 2)
+
+// console.log(ageDouble)
+
+
+
+const ageMap = ages
+
+    .map(age => Math.sqrt(age))
+
+    .map(age => age * 2)
+
+
+console.log(ageMap)
