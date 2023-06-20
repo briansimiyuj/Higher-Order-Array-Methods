@@ -24,57 +24,7 @@ const companies= [
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
 
 
-let canDrink = []
 
-for(let i = 0; i < ages.length; i++){
+const companyNames = companies.map(company => company.name)
 
-    if(ages[i] >= 21){
-        
-        canDrink.push(ages[i])
-
-    }
-
-}
-
-
-
-const movies = ages.filter(function(age){
-
-    if(age >= 18){
-
-        return true
-
-    }
-
-})
-
-// Filter retail companies
-
-const retailCompanies = companies.filter(function(company){
-
-    if(company.category == 'Retail'){
-
-        return true
-
-    }
-
-})
-
-
-// console.log(retailCompanies)
-
-
-const launchYear = companies.filter(year => year.end < 2000)
-
-// console.log(launchYear)
-
-
-const eightiesCompanies = companies.filter(company => company.start <= 1990)
-
-// console.log(eightiesCompanies)
-
-
-
-const lastedTenYears = companies.filter(company => (company.end - company.start >= 10))
-
-console.log(lastedTenYears)
+console.log(companyNames)
